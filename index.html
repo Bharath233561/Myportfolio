@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bharath</title>
+   
+      <!-- Favicon -->
+      <link rel="icon" href="Images/logo.webp" type="image/x-icon">
+      <link rel="icon" href="Images/logo.png" type="image/png">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="demo.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      
+<style>
+     /* Neon Underline */
+     #neonText::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: 4px;
+        background: #00ffea;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffea;
+        animation: underlinePulse 1.5s infinite alternate;
+    }
+
+    /* Letter-by-Letter Neon Animation */
+    #neonText span {
+        display: inline-block;
+        animation: neonFlicker 1.5s infinite alternate;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* Random Flickering for Neon Effect */
+    @keyframes neonFlicker {
+        0% { text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea; }
+        50% { text-shadow: 0 0 15px #00ffea, 0 0 30px #00ffea, 0 0 50px #00ffea; }
+        100% { text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea; }
+    }
+
+    /* Pulsating Underline */
+    @keyframes underlinePulse {
+        0% { box-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea; }
+        100% { box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff; }
+    }
+
+    /* Hover Effect - Stronger Glow + Red Neon + Slight Shake */
+    #neonText:hover span {
+        color: #ff0000;
+        text-shadow: 0 0 20px #ff0000, 0 0 40px #ff4000, 0 0 60px #ff6000;
+        animation: shake 0.2s infinite alternate;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover Effect - Underline Changes to Red */
+    #neonText:hover::after {
+        background: #ff0000;
+        box-shadow: 0 0 20px #ff4000, 0 0 40px #ff6000, 0 0 60px #f1c40f;
+    }
+
+    /* Shake Effect */
+    @keyframes shake {
+        0% { transform: translateX(-2px); }
+        100% { transform: translateX(2px); }
+    }
+</style>
+   </head>
+   
+   <body>
+      <!-- Header -->
+      <header>
+         <div class="container">
+            <h1 id="neonText" class="show1" style="
+          
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            display: none;
+            position: relative;
+            letter-spacing: 5px;
+            transition: all 0.3s ease-in-out;
+        ">
+            Abhishek
+        </h1>
+<h1 class="hide">Bharath</h1>
+
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <nav>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about" >About</a></li>
+                  <li><a href="#services" >Services</a></li>
+                  <li><a href="#portfolio" >Resume</a></li>
+                  <li><a href="#blog" >Blog</a></li>
+                  <li><a href="#contact" >Contact</a></li>
+               </ul>
+            </nav>
+            <div class="social-links mobhide">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-linkedin"></i></a>
+               <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+         </div>
+      </header>
+      <div class="darkmood1"> <button id="theme-icon darkmood"><i id="toggleMode" class="fas fa-sun"></i></button></div>
+      <!-- Profile Section -->
+      <main>
+         <section class="profile">
+            <div class="profile-image">
+               <img src="c:\Users\Admin\.ms-ad\Downloads\bharath1.jpg" alt="Abhishek E T - Profile Picture">
+            </div>
+            <div class="profile-content">
+               <!-- Empty span for typing effect -->
+               <h1>Bharath R G</h1>
+               <h2 id="typing-effect"> </h2>
+               <p>As a skilled Web Developer, I create <b>responsive websites</b> that are both functional and visually appealing. I also specialize in <b>Email Template Development</b>, crafting optimized templates for seamless engagement across all devices. Additionally, I design high-converting <b>Landing Pages</b> that drive results through clean, user-focused design and fast performance.</p>
+               <button id="aboutBtn" style="padding: 10px 20px; background-color: transparent; color: #f1c40f; border: 2px solid #f1c40f; cursor: pointer; border-radius: 10px; font-size: 16px; font-weight: bold; text-transform: uppercase; transition: all 0.4s ease, box-shadow 0.4s ease; box-shadow: 0 0 5px #f1c40f, 0 0 10px #f1c40f, 0 0 15px #f1c40f;">
+                  See My Work in Action
+              </button>
+            </div>
+         </section>
+      </main>
+      <!-- About Section -->
+      <section id="about">
+         <div class="container">
+            <!-- Header Section -->
+            <section class="header-section">
+               <div class="header-left">
+                  <div class="hi-text">Hi There!</div>
+                  <img src="c:\Users\Admin\.ms-ad\Downloads\bharath2.jpg" alt="Creative Person">
+               </div>
+               <div class="header-right">
+                  <h2>Know More</h2>
+                  <p>
+                     As a <b>Web Developer</b>, my goal is to create responsive websites that deliver an exceptional user experience across all devices. By focusing on clean, modern design and functionality, I ensure your website not only looks great but also performs efficiently, whether on desktop, tablet, or mobile. I leverage the latest web technologies to build fast-loading, accessible sites that engage visitors and help businesses stand out online.
+                     <br><br>
+                     In addition to website development, I specialize in <b>Email Template Development</b>, where I craft custom email templates that are optimized for seamless engagement on any device. I understand the importance of responsive design and ensure that every email you send looks polished and professional, whether viewed on a smartphone or desktop. My templates are built with best practices in mind, ensuring compatibility across various email clients while improving open rates and click-throughs.
+                     <br><br>
+                     I also have a strong focus on <b>Landing Page Design</b>, where I create high-converting pages tailored to drive results. I design with the user in mind, ensuring every landing page is not only visually appealing but also focused on guiding the user toward a specific action—whether it’s making a purchase, signing up for a newsletter, or downloading an offer. With a combination of strategic design, speed optimization, and clear calls to action, my landing pages are built to convert visitors into customers or leads.
+                     <br><br>
+                     Let me help you elevate your digital presence with web solutions that are functional, beautiful, and results-driven.
+                  </p>
+               </div>
+            </section>
+            <!-- Skills Section -->
+            <section class="skills-section">
+               <h3>Skills</h3>
+               <div class="skill-bar">
+                  <label>HTML</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="90"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>CSS</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="80"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>Javascript</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="70"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>Bootstrap</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="70"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>Python</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="75"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>MERN</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="80"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>Django</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="60"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>Flask</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="70"></span>
+                  </div>
+               </div>
+               <div class="skill-bar">
+                  <label>SQL</label>
+                  <div class="progress">
+                     <span class="progress-bar" data-width="70"></span>
+                  </div>
+               </div>
+            </section>
+            
+            <!-- Services Section -->
+            <!-- <section class="services-section">
+               <div class="service-card">
+                  <img src="https://picsum.photos/500/500" alt="Lorem Ipsum">
+                  <h4>Lorem Ipsum</h4>
+               </div>
+               <div class="service-card">
+                  <img src="https://picsum.photos/500/500" alt="Lorem Ipsum">
+                  <h4>Website Development</h4>
+               </div>
+               <div class="service-card">
+                  <img src="https://picsum.photos/500/500" alt="Lorem Ipsum">
+                  <h4>Lorem Ipsum</h4>
+               </div>
+               <div class="service-card">
+                  <img src="https://picsum.photos/500/500" alt="Lorem Ipsum">
+                  <h4>Lorem Ipsum</h4>
+               </div>
+               </section>
+         </div>
+      </section> -->
+      <!-- Services Section --->
+      <section id="services">
+         <div class="services-section1">
+            <h2>My Services</h2>
+            <div class="services-container">
+               <!-- Service 1 -->
+               <div class="service-card1">
+                  <i class="fas fa-laptop-code"></i>  <!-- FontAwesome Icon -->
+                  <h3>Website Development</h3>
+                  <p>I specialize in building responsive, user-friendly websites that are optimized for performance across all devices. Whether you're looking for a simple business site or a complex platform, I provide custom solutions that meet your unique needs and drive results.</p>
+               </div>
+               <!-- Service 2 -->
+               <div class="service-card1">
+                  <i class="fas fa-mobile-alt"></i>  <!-- FontAwesome Icon -->
+                  <h3>Email Template Development</h3>
+                  <p>I design custom email templates that are optimized for all devices and email clients. My templates are crafted with your brand in mind and are built to maximize open rates and engagement, ensuring your campaigns get the attention they deserve.</p>
+               </div>
+               <!-- Service 3 -->
+               <div class="service-card1">
+                  <i class="fas fa-globe"></i>  <!-- FontAwesome Icon -->
+                  <h3>Landing Page Design</h3>
+                  <p>Landing pages are key to converting visitors into customers. I design high-converting landing pages that are visually appealing and focused on driving action. With fast load times and optimized layouts, your landing pages will engage visitors and increase conversions.</p>
+               </div>
+               <div class="service-card1">
+                  <i class="fas fa-info-circle"></i>  <!-- FontAwesome Icon -->
+                  <h3>More Information</h3>
+                  <p>If you're looking for additional services like SEO, performance optimization, or ongoing website maintenance, I offer a wide range of digital solutions tailored to your needs. Let's discuss how I can help you grow your business online with professional web solutions.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+   <h2>My Resume</h2>
+   <div class="resume">
+      <div class="resume-info">
+         <div class="resume-item">
+            <div class="resume-content">
+               <h3 class="resume-title">👤 Bharath R G</h3>
+               <p><span style="font-size: 22px; margin-right: 8px;">📍</span> Bengaluru, Karnataka</p>
+               <p><span style="font-size: 22px; margin-right: 8px;">📞</span><a href="tel:+919108604060">+91 9108604060</a></p>
+               <p><span style="font-size: 22px; margin-right: 8px;">📧</span><a href="mailto:bharathrgbharathrg@gmail.com" style="word-wrap: normal;word-break: keep-all;">bharathrgbharathrg<br style="display: none;" class="show">@gmail.com</a></p>
+            </div>
+         </div>
+
+         <div class="resume-item">
+            <div class="resume-content">
+               <h3 class="resume-title">🎓 Education</h3>
+               <h4 style="text-align: left;"><span style="font-size: 22px; margin-right: 4px;">📖</span> Bachelor of Science (B.Sc)</h4>
+               <p><span style="font-size: 22px; margin-right: 8px;">🎓</span> Completed my <b>B.Sc.</b> degree.</p>
+               <p> <span style="font-size: 22px; margin-right: 8px;">🏫</span><span> Studied at <b>B.R. Tambakad Arts, Commerce, and Science First Grade College, Hirekerur.</b></span></p>
+            </div>
+         </div>
+
+         <div class="resume-item">
+            <div class="resume-content">
+               <h3 class="resume-title">🎓 Course</h3>
+               <h4 style="text-align: left;"><span style="font-size: 22px; margin-right: 4px;">🖥</span><span> Full Stack Python Developer</span></h4>
+               <p><span style="font-size: 22px; margin-right: 8px;">🏫</span>  From <b>ISM UNIV Bengaluru</b></p>
+               <p><span style="font-size: 22px; margin-right: 8px;">📚</span> <span>Completed the <b>Full Stack Python Developer</b> course.</span></p>
+            </div>
+         </div>
+
+         <!-- <div class="resume-item">
+            <div class="resume-content">
+               <h3 class="resume-title">🚀 Projects</h3>
+               <h4 style="text-align: left;"><span style="font-size: 22px; margin-right: 4px;">💍</span> Wedding Planner</h4>
+               <p><span style="font-size: 22px; margin-right: 8px;">🖥</span><span> Built a wedding planner website for online event orders.</span></p>
+               <p><span style="font-size: 22px; margin-right: 8px;">🛠</span><span> Built using <b>HTML, CSS, JavaScript, SQL, Python, Flask</b>.</span></p>
+            </div>
+         </div> -->
+
+         <div class="resume-item">
+            <div class="resume-content">
+               <h3 class="resume-title">🎯 Hobbies</h3>
+               <p><span style="font-size: 22px; margin-right: 8px;">🎬</span> Watching Movies</p>
+               <p><span style="font-size: 22px; margin-right: 8px;">🎮</span> Playing Video Games</p>
+               <p><span style="font-size: 22px; margin-right: 8px;">📖</span> Learning New Things</p>
+               <p><span style="font-size: 22px; margin-right: 8px;">👨‍👩‍👧‍👦</span> Spending Time with Family and Friends</p>
+            </div>
+         </div>
+
+         <div class="download-section">
+            <h2><span>Download</span> CV</h2>
+            <p>Looking to learn more about my skills and experience?<br>Download my CV and explore my professional journey!</p>
+            <a href="c:\Users\Admin\.ms-ad\Downloads\BharathResume.pdf" id="downloadButton" class="download-btn" download
+    style="padding: 12px 30px; background-color: transparent; color: #000000; border: 2px solid #00eaff; text-decoration: none; cursor: pointer; border-radius: 10px; font-size: 16px; font-weight: bold; text-transform: uppercase; transition: all 0.4s ease, box-shadow 0.4s ease; box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;">
+    Download Now
+</a>
+         </div>
+      </div>
+   </div>
+</section>
+
+      <!-- Blog Section -->
+      <section id="blog">
+         <div class="blog-section">
+            <div class="blog-section">
+               <h2>Latest Insights</h2>
+               <div class="blog-container">
+                  <div class="blog-post">
+                     <img src="bharathmain/images/webdevep.jpeg" alt="Blog Image 1">
+                     <h3>Responsive Web Development: Why It’s Essential</h3>
+                     <p class="excerpt">In today’s digital world, having a responsive website is crucial for providing an optimal experience on any device. Learn why responsive design should be a priority for your website's success.</p>
+                     <a href="#" class="read-more">Read More</a>
+                  </div>
+                  <div class="blog-post">
+                     <img src="C:\Users\Admin\Desktop\portifolio\bharathmain\images\emails.png" alt="Blog Image 2">
+                     <h3>Designing Effective Email Templates for High Engagement</h3>
+                     <p class="excerpt">Crafting email templates that are both visually appealing and responsive can significantly boost your email campaign's performance. Here's how to design emails that resonate with your audience.</p>
+                     <a href="#" class="read-more">Read More</a>
+                  </div>
+                  <div class="blog-post">
+                     <img src="Images/lp.jpg" alt="Blog Image 3">
+                     <h3>Landing Page Design: Best Practices for Conversion</h3>
+                     <p class="excerpt">A well-designed landing page is the cornerstone of any online campaign. Discover the best practices for creating landing pages that convert visitors into leads or customers.</p>
+                     <a href="#" class="read-more">Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+         <div class="contact-section">
+            <div class="contact-info">
+               <h2>Contact Us</h2>
+               <p><strong>Phone:</strong> +91 9108604060</p>
+               <p><strong>Email:</strong> bharathrgbharathrg@gmail.com</p>
+               <p><strong>Address:</strong> Rajajinagara,Bengaluru</p>
+            </div>
+            <div class="contact-form">
+               <h2>Message Us</h2>
+               <form id="contactForm" action="c:\Users\Admin\.ms-ad\Downloads\bharath2.jpg" method="POST">
+                  <input type="text" name="name" id="name" placeholder="Your Name" required>
+                  <input type="email" name="email" id="email" placeholder="Your Email" required>
+                  <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                  <button type="submit" class="bt" >Submit</button>
+               </form>
+            </div>
+
+           
+
+            <!-- <div class="contact-form">
+               <h2>Message Us</h2>
+               <form id="contactForm">
+                  <input type="text" name="name" id="name" placeholder="Your Name" required>
+                  <input type="email" name="email" id="email" placeholder="Your Email" required>
+                  <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                  <button type="submit" class="bt">Submit</button>
+               </form>
+               <p id="responseMsg"></p> 
+            </div> -->
+            
+         </div>
+         <img src="c:\Users\Admin\.ms-ad\Downloads\bharath1.jpg" alt="Skyline" class="skyline">
+      </section>
+      <!-- Modal -->
+      <div class="modal" id="aboutModal">
+         <div class="modal-content">
+            <h2>Web Development & Digital Experience</h2>
+            <p style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif'">
+               In addition to my web development expertise, I specialize in Email Template Development, crafting responsive, visually appealing templates that are optimized for various email clients and devices. I ensure your email campaigns deliver a consistent and engaging experience, enhancing user interaction and driving conversions.
+               <br> <br> 
+               Furthermore, I design and develop high-converting Landing Pages that are tailored to meet business goals. With a focus on fast load times, mobile-first design, and user-centered layouts, I help create pages that capture attention and convert visitors into leads or customers. Each landing page is optimized for performance and tested for effectiveness, ensuring maximum impact.
+            </p>
+            <button class="close-btn" id="closeModal">Close</button>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+         <div class="social-icons">					
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+         </div>
+         <p>&copy; 2014 Bharath R G. All Rights Reserved.</p>
+      </footer>
+      <button id="scrollToTopBtn">
+      <i class="fas fa-arrow-up"></i>
+      </button>
+      <script src="javascript.js"></script>
+      
+      <script>
+         document.getElementById("aboutBtn").addEventListener("mouseenter", function() {
+             this.style.borderRadius = "50px";  // On hover, the border radius changes
+             this.style.boxShadow = "0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f1c40f";  // Neon glow effect
+         });
+     
+         document.getElementById("aboutBtn").addEventListener("mouseleave", function() {
+             this.style.borderRadius = "10px";  // On hover out, the border radius returns
+             this.style.boxShadow = "0 0 5px #f1c40f, 0 0 10px #f1c40f, 0 0 15px #f1c40f";  // Reset glow effect
+         });
+
+
+         document.getElementById("downloadButton").addEventListener("mouseenter", function() {
+        this.style.borderRadius = "50px";  // On hover, the border radius changes
+        this.style.boxShadow = "0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00";  // Neon glow effect
+    });
+
+    document.getElementById("downloadButton").addEventListener("mouseleave", function() {
+        this.style.borderRadius = "10px";  // On hover out, the border radius returns
+        this.style.boxShadow = "0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00";  // Reset glow effect
+    });
+     </script>
+   </body>
+</html>
